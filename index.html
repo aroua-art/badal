@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8">
+  <title>درس 2: البدل - 4 متوسط</title>
+</head>
+<body>
+<script>
+fetch('index.txt')
+  .then(r => r.text())
+  .then(html => {
+    document.open();
+    document.write(html);
+    document.close();
+  });
+</script>
+</body>
+</html>
